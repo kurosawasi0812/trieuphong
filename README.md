@@ -1,20 +1,15 @@
 # Triệu Phong — Mảnh đất con người
 
-Bản dựng web tĩnh (HTML/CSS/JS)
+Website tĩnh dạng scrollytelling, tối ưu cho tiếng Việt.
 
-Nội dung lịch sử được tổ chức lại từ bài:
-https://trieuphong.quangtri.gov.vn/vi/manh-dat-con-nguoi1/
+## Chạy local
+Mở `index.html` hoặc dùng VS Code Live Server.
 
-## Chạy thử
-Mở trực tiếp `index.html` trong trình duyệt hoặc chạy:
+## Đưa lên GitHub Pages
+1. Tạo repository public.
+2. Upload `index.html`, `style.css`, `script.js` và `README.md` ở thư mục gốc.
+3. Vào Settings → Pages.
+4. Chọn Deploy from a branch → `main` → `/ (root)` → Save.
 
-```bash
-python3 -m http.server 8000
-```
-
-Sau đó truy cập `http://localhost:8000`.
-
-## Ghi chú
-- Trang không dùng framework, chỉ HTML/CSS/JavaScript thuần.
-- Ảnh minh họa đang dùng URL từ các nguồn ảnh công khai; khi triển khai chính thức nên tải ảnh về thư mục `assets/` và bổ sung thông tin bản quyền/giấy phép phù hợp.
-- Nội dung lịch sử được trình bày theo bài nguồn; các mốc hành chính có thể phản ánh bối cảnh tại thời điểm bài nguồn được xuất bản.
+## Font
+Website dùng Google Fonts với `Be Vietnam Pro` cho nội dung và `Noto Serif Display` cho tiêu đề. Hai font đều hỗ trợ tiếng Việt tốt hơn việc phụ thuộc trực tiếp vào `Georgia`/font hệ thống, giúp tránh lỗi dấu tiếng Việt và lệch glyph giữa máy Windows, macOS và Linux.
