@@ -80,118 +80,76 @@ button{font:inherit}
 .section-head>p{color:var(--muted);max-width:500px;margin:0 0 4px;font-size:1rem}
 .section-head-light{color:#fffdf7}.section-head-light>p{color:#bac5c0}.section-head-light .section-no{color:#dfb27f}
 
-.timeline-section {
-  padding: 120px 0 140px;
-}
-
 .timeline {
   position: relative;
-  max-width: 1180px;
-  margin: 90px auto 0;
-  padding: 0 20px;
+  margin: 70px 0 0;
+  padding-left: 96px;
+  max-width: 920px;
 }
 
-/* đường timeline */
 .timeline::before {
   content: "";
   position: absolute;
+  left: 28px;
   top: 0;
   bottom: 0;
-  left: 150px;
   width: 1px;
-  background: rgba(38, 49, 45, 0.22);
+  background: var(--line);
 }
 
-/* từng mốc */
 .timeline-item {
   position: relative;
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 48px;
-  padding-bottom: 78px;
-}
-
-/* cột marker */
-.timeline-marker {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 30px;
-}
-
-/* năm */
-.timeline-year {
   display: block;
-  max-width: 100px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 12px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #a62b24;
-  text-align: right;
-  letter-spacing: 0.04em;
-  padding-top: 5px;
+  max-width: 760px;
+  padding: 0 0 58px;
 }
 
-/* chấm */
-.timeline-dot {
-  position: absolute;
-  top: 4px;
-  right: -5px;
-  width: 11px;
-  height: 11px;
-  border: 2px solid #f2ede2;
-  border-radius: 50%;
-  background: #a62b24;
-  box-shadow: 0 0 0 1px rgba(166, 43, 36, 0.25);
-}
-
-/* mốc đầu */
-.timeline-item.is-first .timeline-dot {
-  width: 15px;
-  height: 15px;
-  right: -7px;
-  top: 2px;
-}
-
-/* mốc cuối */
-.timeline-item.is-last {
+.timeline-item:last-child {
   padding-bottom: 0;
 }
 
-/* nội dung */
-.timeline-content {
-  max-width: 760px;
+.timeline-dot {
+  position: absolute;
+  left: -96px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--accent);
+  font: 700 11px/1.15 "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  padding: 5px;
 }
 
-.timeline-label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 10px;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  color: #a62b24;
-  text-transform: uppercase;
+.timeline-item.active .timeline-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
-.timeline-content h3 {
+.timeline-body {
+  min-width: 0;
+}
+
+.timeline-body h3 {
   margin: 0 0 10px;
   font-family: "Noto Serif Display", Georgia, serif;
-  font-size: clamp(1.55rem, 2.5vw, 2.15rem);
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.18;
   font-weight: 500;
-  letter-spacing: -0.01em;
-  color: #17221f;
+  letter-spacing: normal;
 }
 
-.timeline-content p {
+.timeline-body p:not(.kicker) {
   margin: 0;
-  max-width: 720px;
+  max-width: 700px;
+  color: #5d6762;
   font-size: 15px;
   line-height: 1.75;
-  color: #64706b;
 }
 .people-intro{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:center;margin-bottom:46px;padding:34px;border:1px solid #d9d0c1;background:rgba(255,255,255,.28)}
 .big-quote{font-family:"Noto Serif Display",serif;font-size:2rem;line-height:1.15;margin:0;color:var(--ink)}
