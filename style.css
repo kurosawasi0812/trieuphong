@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("./fonts/BeVietnamPro[wght].ttf") format("ttf");
+  src: url("./fonts/BeVietnamPro.ttf") format("ttf");
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "NotoSansTaiViet-Regular";
-  src: url("./fonts/NotoSansTaiViet-Regular.otf") format("otf");
+  font-family: "NotoSerifDisplay";
+  src: url("./fonts/NotoSerifDisplay.ttf") format("ttf");
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
