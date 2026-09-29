@@ -1,7 +1,6 @@
 # Triệu Phong — Mảnh đất con người
 
-Bản dựng web tĩnh (HTML/CSS/JS) lấy cảm hứng từ cấu trúc scrollytelling của trang mẫu:
-https://vnu254.github.io/sinhcung1/
+Bản dựng web tĩnh (HTML/CSS/JS)
 
 Nội dung lịch sử được tổ chức lại từ bài:
 https://trieuphong.quangtri.gov.vn/vi/manh-dat-con-nguoi1/
